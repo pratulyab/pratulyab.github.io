@@ -24,7 +24,7 @@ layout: default
     </div>
     {% endif %}
 
-    <div class="clearfix">
+    <div class="clearfix" style="text-align:justify;">
       {{ content }}
     </div>
 
@@ -36,12 +36,14 @@ layout: default
       {% include selected_papers.html %}
     {% endif %}
 
+{% comment %}
     {% if page.social %}
     <div class="social">
       {% include social.html %}
       <div class="contact-note">{{ site.contact_note }}</div>
     </div>
     {% endif %}
+{% endcomment %}
   </article>
 
 </div>

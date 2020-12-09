@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>2048 Game</title>
+        <link rel="stylesheet" type="text/css" href="/assets/css/2048.css" >
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/assets/js/2048.js" type="application/ecmascript"></script>
+    </head>
+     
+    <body>
+        <header>
+            <div id="first">
+                <h1>2048</h1>
+                <div id="score">
+                    <h4>SCORE</h4>
+                    <div></div>
+                </div>
+                <div id="best">
+                    <h4>BEST</h4>
+                    <div></div>
+                </div>
+            </div>
+            <div id="second">
+                <div id="paras">
+                    <p id="bold">Play 2048 Game Online</p>
+                    <p>Join the numbers and get to the <span>2048 tile!</span></p>
+                </div>
+                <div class="restart">New Game</div>
+            </div>
+        </header>
+        <div id="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <i id="start-info" class="fa fa-info-circle"></i>
+            <div id="info">
+                <h1>Controls</h1><br>
+                <p>Arrow keys and the gamer keys (aswd) can be used to play.</p>
+                <p><u>You can <b>undo</b> upto 5 times!</u></p><br>
+                <ul style="list-style: none;">
+                    <li><i class="fa fa-arrow-up">w</i>&nbsp;Move Up</li><br>
+                    <li><i class="fa fa-arrow-left">a</i>&nbsp;Move Left&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <i class="fa fa-arrow-down">s</i>&nbsp;Move Down&emsp;&emsp;&emsp;&nbsp;
+                        <i class="fa fa-arrow-right">d</i>&nbsp;Move Right
+                    </li>
+                    <br><br>
+                    <li><b>&lt;u&gt;</b>&emsp;<b>Undo</b><br>(Upto last 5 moves, provided you have played at least those many moves.)</li>
+                </ul>
+                <br><br>
+                <p><b>Note:&nbsp;</b>Your game session is stored. So, you can fearlessly quit the browser and revisit to continue the game, from where you left off!</p>
+                <i id="exit-info" class="fa fa-times-circle fa-2x"></i>
+            </div>
+            <div id="gameover">
+            <p>Game over!</p>
+            <div id="gameover-buttons">
+                <div class="restart">Try again</div>
+                <div><a href="https://github.com/pratulyab/2048" target=_blank><i class="fa fa-github"></i>&nbsp;Star&nbsp;<i class="fa fa-star"></i></a></div>
+            </div>
+            </div>
+            <div id="finish">
+                <p>CONGRATULATIONS!<br>You've Won!</p>
+                <div id="finish-buttons">
+                    <div id="continue">Continue</div>
+                    <div class="restart">New Game</div>
+                    <div><a href="https://github.com/pratulyab/2048" target="_blank"><i class="fa fa-github"></i>&nbsp;Star</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="gh-star">
+            <a class="github-button" target="_blank" href="https://github.com/pratulyab/2048" data-icon="octicon-star" data-style="mega" aria-label="Star pratulyab/2048 on GitHub">Star on GitHub</a>
+        </div>
+        <!-- Github Star-->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script>
+            function init() {
+                Game.init();   
+            }
+            window.addEventListener('load',init);
+    </script>
+    </body>
+</html>

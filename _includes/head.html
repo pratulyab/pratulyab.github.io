@@ -4,6 +4,12 @@
 
 <title>{% if site.title == blank %}{{ site.title }}{% else %}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% endif %}{% if page.title and page.url != "/" %} | {{ page.title }}{% endif %}</title>
 <meta name="description" content="{{ site.description }}">
+{% comment %}
+<meta name="keywords" content="{%- if page.keywords -%}{{ page.keywords }}{%- elsif page.description -%} {{ page.description | split: " " | uniq | join: ", "}}{%- else -%}{{ page.title | split: " " | join: ", " }}{%- endif -%}" />
+{% endcomment %}
+{% if page.keywords %}
+	<meta name="keywords" content="{{ page.keywords }}" />
+{% endif %}
 
 <!-- Open Graph -->
 {% if site.serve_og_meta %}
@@ -12,7 +18,7 @@
 <meta property="og:title" content="{{ site.name }}" />
 <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
 <meta property="og:description" content="{{ page.title }}" />
-<meta property="og:image" content="{%- if page.og_image -%}{{ page.og_image }}{%- else -%}{{ site.og_image }}{%- endif -%}" />
+<meta property="og:image" content="{%- if page.og_image -%}{{ page.og_image | prepend: site.url }}{%- else -%}{{ site.og_image | prepend: site.url }}{%- endif -%}" />
 {% endif %}
 
 <!-- Bootstrap & MDB -->

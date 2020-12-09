@@ -11,7 +11,7 @@
     </style>
     {% endif %}
   </head>
-
+<!--
   <d-front-matter>
     <script async type="text/json">{
       "title": "{{ page.title }}",
@@ -28,6 +28,7 @@
               "url": "{{ author.affiliations.url }}"
             }
           ]
+
         }{% if forloop.last == false %},{% endif %}
         {% endfor %}
       ],
@@ -47,7 +48,7 @@
       }
     }</script>
   </d-front-matter>
-
+-->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
     <!-- Header -->
@@ -61,11 +62,13 @@
       <d-title>
         <h1>{{ page.title }}</h1>
         <p>{{ page.description }}</p>
+    	<p>{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
       </d-title>
 
-      <d-byline></d-byline>
+	  
+<!--      <d-byline></d-byline> -->
 
-      <d-article>
+      <d-article  style="text-align: justify;">
         {{ content }}
       </d-article>
 
@@ -75,6 +78,25 @@
       </d-appendix>
 
     </div>
+
+	<!-- Disqus -->
+	  {% if site.disqus_shortname and page.comments %}
+	  <div class="l-body">
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+		  var disqus_shortname  = '{{ site.disqus_shortname }}';
+		  var disqus_identifier = '{{ page.id }}';
+		  var disqus_title      = {{ page.title | jsonify }};
+		  (function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		  })();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  </div>
+	  {% endif %}
+
 
     <!-- Footer -->
 
