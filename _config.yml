@@ -22,7 +22,7 @@ last_updated: false # set to true if you want to display last updated in the foo
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 # TODO: add layout settings (single page vs. multi-page)
 
 # -----------------------------------------------------------------------------
@@ -151,7 +151,7 @@ enable_google_analytics:  true
 enable_mansory:           true
 enable_math:              true
 enable_tooltips:          true
-enable_darkmode:          true
+enable_darkmode:          false
 show_social_icons:        true
 
 # -----------------------------------------------------------------------------
