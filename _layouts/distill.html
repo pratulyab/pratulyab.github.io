@@ -11,6 +11,8 @@
     </style>
     {% endif %}
   </head>
+
+{% comment %}
 <!--
   <d-front-matter>
     <script async type="text/json">{
@@ -49,6 +51,9 @@
     }</script>
   </d-front-matter>
 -->
+
+{% endcomment %}
+
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
     <!-- Header -->
@@ -106,5 +111,7 @@
 
   <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}">
   </d-bibliography>
+
+
 
 </html>

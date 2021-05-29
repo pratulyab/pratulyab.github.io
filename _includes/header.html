@@ -5,7 +5,7 @@
     <div class="container">
       {% if page.title != "about" %}
       <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/">
-       {% if site.title == blank %}{{ site.title }}{% else %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{% endif %}
+       {% if site.title == blank %}{{ site.title }}{% else %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.last_name }}{% endif %}
       </a>
       {% elsif site.show_social_icons %}
         <!-- Social Icons -->
@@ -68,5 +68,13 @@
       </div>
     </div>
   </nav>
+
+  <!--
+  <div style="width: 100%; height: 8px; background: #ccc; z-index: 1000; top: 0;">
+    <div id="progress-bar" style="height: 8px; background: #4caf50; width: 0%;">
+  </div>
+
+  <script src="{{ '/assets/js/progress.js' | relative_url }}"></script>
+	-->
 
 </header>
