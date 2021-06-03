@@ -1,10 +1,11 @@
 ---
 layout: page
-title: larynx
-description: Translation on Demand POC (Larynx) for the 341st MI Linguistic Battalion US Army
-img: /assets/img/projects/tod-mvp.png
-redirect: https://github.com/pratulyab/translation-on-demand
-importance: 4
+title: weenix
+description: Tiny Unix-like OS written in C. Runs on x86 QEMU emulator (processes, threads, file system, virtual memory)
+img: /assets/img/projects/weenix.png
+redirect: https://github.com/pratulyab/weenix
+github: https://github.com/pratulyab/weenix
+importance: 1
 ---
 
 Every project has a beautiful feature showcase page.

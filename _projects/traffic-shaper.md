@@ -1,10 +1,11 @@
 ---
 layout: page
-title: larynx
-description: Translation on Demand POC (Larynx) for the 341st MI Linguistic Battalion US Army
-img: /assets/img/projects/tod-mvp.png
-redirect: https://github.com/pratulyab/translation-on-demand
-importance: 4
+title: traffic-shaper
+description: Simulating a traffic shaper that transmits packets controlled by a token bucket filter. A multithreaded system written in C using pthread library
+img: /assets/img/projects/tokenbucket.png
+redirect: https://github.com/pratulyab/traffic-shaper
+github: https://github.com/pratulyab/traffic-shaper
+importance: 2
 ---
 
 Every project has a beautiful feature showcase page.

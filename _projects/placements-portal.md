@@ -5,7 +5,7 @@ description: Streamlining placement activities for students, recruiters <br>(@my
 img: /assets/img/projects/portal.gif
 redirect: https://placements.ggsipu.ac.in
 github: https://github.com/pratulyab/ggsipu-placement-cell-portal
-importance: 4
+importance: 5
 ---
 
 Every project has a beautiful feature showcase page.

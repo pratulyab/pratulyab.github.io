@@ -5,7 +5,7 @@ description: Image Segmentation, Denoising, Knowledge Graphs
 img: /assets/img/projects/linked-maps.png
 redirect: https://usc-isi-i2.github.io/linked-maps/
 github: https://github.com/usc-isi-i2/linked-maps/tree/denoising/denoising
-importance: 2
+importance: 3
 ---
 
 Every project has a beautiful feature showcase page.

@@ -21,8 +21,8 @@ Owing to my interests in deep learning, I recently interned at [Mercedes-Benz R&
 
 Previously, I was a graduate research assistant at the [Center on Knowledge Graphs](http://usc-isi-i2.github.io/home/){:target="\_blank"} at [USC ISI](https://isi.edu){:target="\_blank"}, where I worked with ML and GIS tools to segment {railroad, road, water} lines in historical topological maps and denoise the masks using cluster analysis as a post-processing step.
 
-I'm actively seeking `SWE,MLE` full-time opportunities (US) starting Jan '22.
+<span style="color: #af006f">I'm actively seeking `SWE,MLE` full-time opportunities (US) starting Jan '22.</span>
 
 <p style="text-align:center" markdown="1">
-	:page_with_curl: [```Here's my resume```](/assets/pdf/webpage-resume.pdf)
+	:page_with_curl: [```Here's my resume```](/assets/pdf/pratulya-resume.pdf)
 </p>
