@@ -1,7 +1,7 @@
 ---
 layout: page
 title: quality-content-synthesizer
-description: Rating webpages based on their content. SVD rating engine, async architecture
+description: rating webpages based on their content, SVD rating engine, async architecture
 img: assets/img/projects/qcs.gif
 redirect: https://github.com/pratulyab/quality-content-synthesizer
 importance: 7

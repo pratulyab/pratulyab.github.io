@@ -1,7 +1,7 @@
 ---
 layout: page
 title: linked-maps
-description: Image Segmentation, Denoising, Knowledge Graphs
+description: Image Segmentation, Denoising (post-processing), Knowledge Graphs <br><b>#computer-vision</b>
 img: /assets/img/projects/linked-maps.png
 redirect: https://usc-isi-i2.github.io/linked-maps/
 github: https://github.com/usc-isi-i2/linked-maps/tree/denoising/denoising

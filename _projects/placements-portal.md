@@ -1,7 +1,7 @@
 ---
 layout: page
 title: web-portal
-description: Streamlining placement activities for students, recruiters <br>(@my-undergrad-university)
+description: streamlined placement activities for my undergrad university by facilitating interaction between students and recruiters <br><b>#real-world-problem</b>
 img: /assets/img/projects/portal.gif
 redirect: https://placements.ggsipu.ac.in
 github: https://github.com/pratulyab/ggsipu-placement-cell-portal

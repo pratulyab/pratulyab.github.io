@@ -1,7 +1,7 @@
 ---
 layout: page
 title: results-bot
-description: an amazing automated utility bot, widely appreciated <br> (@my-undergrad-university)
+description: an amazing automated utility bot, widely appreciated by undergrad cohorts <br><b>#real-world-problem</b>
 img: /assets/img/projects/results.gif
 redirect: https://github.com/pratulyab/ipu-results-bot
 importance: 6

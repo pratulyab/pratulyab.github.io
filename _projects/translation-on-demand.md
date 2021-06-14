@@ -1,7 +1,7 @@
 ---
 layout: page
 title: larynx
-description: Translation on Demand POC (Larynx) for the 341st MI Linguistic Battalion US Army
+description: Translation on Demand POC (Larynx) for the 341st MI Linguistic Battalion US Army <br><b>#real-world-problem</b>
 img: /assets/img/projects/tod-mvp.png
 redirect: https://github.com/pratulyab/translation-on-demand
 importance: 4

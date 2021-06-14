@@ -1,7 +1,7 @@
 ---
 layout: page
 title: weenix
-description: Tiny Unix-like OS written in C. Runs on x86 QEMU emulator (processes, threads, file system, virtual memory)
+description: Tiny Unix-like OS written in C. Runs on x86 QEMU emulator (processes, threads, file system, virtual memory) <br><b>#operating-system</b>
 img: /assets/img/projects/weenix.png
 redirect: https://github.com/pratulyab/weenix
 github: https://github.com/pratulyab/weenix

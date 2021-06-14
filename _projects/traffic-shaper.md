@@ -1,7 +1,7 @@
 ---
 layout: page
 title: traffic-shaper
-description: Simulating a traffic shaper that transmits packets controlled by a token bucket filter. A multithreaded system written in C using pthread library
+description: A multithreaded system (written in C, using pthread library) that simulates a traffic shaper that transmits packets controlled by a token bucket filter
 img: /assets/img/projects/tokenbucket.png
 redirect: https://github.com/pratulyab/traffic-shaper
 github: https://github.com/pratulyab/traffic-shaper
