@@ -17,13 +17,13 @@ social: true  # includes social icons at the bottom of the page
 
 Hi, I'm Pratulya, an MS Computer Science student at <a href="https://usc.edu" target="_blank">USC</a>. <br>
 
-Owing to my interests in deep learning, I recently interned at [Mercedes-Benz R&D India](https://mbrdi.co.in){:target="\_blank"}, where I primarily worked researching in deep learning for 3D point clouds _(part segmentation, surface normal estimation, mesh reconstruction)_,  graph neural networks and synthetic data generation.
+Owing to my interests in deep learning, I recently interned at [Mercedes-Benz R&D India](https://mbrdi.co.in){:target="\_blank"}, where I primarily worked researching in deep learning for 3D point clouds,  graph neural networks and synthetic data generation.
 
-Previously, I was a graduate research assistant at the [Center on Knowledge Graphs](http://usc-isi-i2.github.io/home/){:target="\_blank"} at [USC ISI](https://isi.edu){:target="\_blank"}, where I worked with ML and GIS tools to segment {railroad, road, water} lines in historical topological maps and denoise the masks using cluster analysis as a post-processing step.
+Previously, I was a research assistant at [USC ISI (CKD)](http://usc-isi-i2.github.io/home/){:target="\_blank"}, where I worked on 2D image segmentation, clustering analysis and knowledge graphs.
 
-Additionally, I like to keep CS fundamentals in check and even wrote an [`operating system`](/projects) in C.
+Although my portfolio speaks a lot about AI/ML, I've been into software for over **7 years** now and have utilized varied technologies to solve many [`real-world problems`](/projects) at different levels. So, I like to keep CS fundamentals in check and even wrote a Unix-like [`operating system`](/projects) in C.
 
-<span style="color: #af006f">I'm actively seeking `SWE,MLE` full-time opportunities (US) starting Jan '22.</span>
+<span style="color: #af006f">:loudspeaker:   Actively seeking `SWE,MLE` full-time opportunities (US) starting Jan 2022</span>
 
 <p style="text-align:center" markdown="1">
 	:page_with_curl: [```Here's my resume```](/assets/pdf/pratulya-resume.pdf)
