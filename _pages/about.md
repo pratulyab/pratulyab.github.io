@@ -21,7 +21,7 @@ Owing to my interests in deep learning, I recently interned at [Mercedes-Benz R&
 
 Previously, I was a research assistant at [USC ISI (CKD)](http://usc-isi-i2.github.io/home/){:target="\_blank"}, where I worked on 2D image segmentation, clustering analysis and knowledge graphs.
 
-Although my portfolio speaks a lot about AI/ML, I've been into software for over **7 years** now and have utilized varied technologies to solve many [`real-world problems`](/projects) at different levels. So, I like to keep CS fundamentals in check and even wrote a Unix-like [`operating system`](/projects) in C.
+In general, I have been into software for over 7 years now and have utilized varied technologies to solve [`real-world problems`](/projects) on different levels. Apart from AI/ML, I like to keep CS fundamentals in check and even wrote a Unix-like [`operating system`](/projects) in C.
 
 <span style="color: #af006f">:loudspeaker:   Actively seeking `SWE,MLE` full-time opportunities (US) starting Jan 2022</span>
 
