@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Pratulya Bubna | Graph Neural Networks and Graph Convolution</title>
+<meta name="description" content="Personal Webpage - Pratulya Bubna
+">
+
+
+<meta name="google-site-verification" content="es8CThz5z5r6m9N7cnlabrX7dMEnnVAA40CZozcoyeg" />
+<meta name="robots" content="nofollow, noimageindex" />
+
+<!-- Open Graph -->
+
+<meta property="og:site_name" content="Personal Webpage - Pratulya Bubna
+" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="" />
+<meta property="og:url" content="/blog/2020/graph-nn/" />
+<meta property="og:description" content="Graph Neural Networks and Graph Convolution" />
+<meta property="og:image" content="/assets/img/blog/gnn/gnn.png" />
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/blog/2020/graph-nn/">
+
+<!-- Theming-->
+
+
+    
+<!-- MathJax -->
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    
+  </head>
+
+
+
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+       <span class="font-weight-bold">Pratulya</span> Bubna
+      </a>
+      
+      <!-- Navbar Toogle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                projects
+                
+              </a>
+          </li>
+          
+          
+          
+		  
+		  <!-- Resume -->
+          <li class="nav-item">
+            <a class="nav-link" href="/assets/pdf/pratulya-resume.pdf">
+              resume
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--
+  <div style="width: 100%; height: 8px; background: #ccc; z-index: 1000; top: 0;">
+    <div id="progress-bar" style="height: 8px; background: #4caf50; width: 0%;">
+  </div>
+
+  <script src="/assets/js/progress.js"></script>
+	-->
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="post distill">
+
+      <d-title>
+        <h1>Graph Neural Networks and Graph Convolution</h1>
+        <p>A no-brainer primer on graph neural networks and graph convolution to get a quick sense about their workings</p>
+    	<p>December 4, 2020 • Pratulya Bubna</p>
+      </d-title>
+
+	  
+<!--      <d-byline></d-byline> -->
+
+      <d-article style="text-align: justify;">
+        <p>This post is intended to provide a very high-level intuition about the workings of Graph Convolutional Networks (GCNs)in the spatial domain. The goal is to provide an overall rough-idea about GNNs and GCNs without delving into the meaty math.</p>
+
+<ul>
+  <li><a href="#intro">Introduction</a></li>
+  <li>
+<a href="#gcn">Graph Convolutional Networks (GCNs)</a>
+    <ul>
+      <li><a href="#graphconv">Graph Convolution</a></li>
+      <li><a href="#recipe">Recipe</a></li>
+      <li><a href="#gcn-eqn">All in an equation</a></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="row row-cols-1 mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gnn/gnn.png">
+    </div>
+</div>
+<div class="caption">
+    An illustration of a graph-based network. (image credits <d-cite key="guo2020deep"></d-cite>)
+</div>
+
+<!-- Introduction -->
+<p><a name="intro"></a></p>
+<h3 id="introduction">Introduction</h3>
+<p>Images, text and audio data can easily be represented as a grid — a regular and structured format. Given this representation, Convolutional Neural Networks (CNNs) can be successfully applied to process this data.</p>
+
+<p>However, <em>non-Euclidean</em> data such as social networks, 3D meshes, molecular data, knowledge graphs — inherently graphs, cannot be represented in a grid-like structure and instead lie in an irregular domain. Consequently, the convolution operation in the <em>Euclidean</em> case (CNNs) is not well-defined on non-Euclidean domains.</p>
+
+<p>The learning architecture designed to handle unstructured, non-Euclidean graph data is <strong>Graph Neural Networks (GNNs)</strong>. GNNs <strong>do not have strict structural requirements</strong> as opposed to regular neural networks that operate on fixed-dimension inputs (eg. CNNs built over MNIST dataset require all input images to be of size 28x28). This means that the number of vertices and edges between input graphs can change.</p>
+
+<p>Variants of GNNs are <strong>Graph Convolutional Networks (GCNs)</strong> that have evolved due to works in generalizing convolutions to the graph domain.</p>
+
+<div class="l-body"><hr style="margin:0;"></div>
+
+<p>A graph is a simple way of encoding pairwise relationships among a set of objects.</p>
+<blockquote>
+  <p>A graph \(G\) consists of a pair of sets \((V, E)\) — a collection \(V\) of <code class="language-plaintext highlighter-rouge">nodes</code> and a collection of \(E\) of <code class="language-plaintext highlighter-rouge">edges</code>. Each edge \(e \in E\) joins two nodes and thus is a two-element subset of \(V: e = \{u, v\}\) for some \(u, v \in V\).</p>
+</blockquote>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gnn/graph.jpg">
+    </div>
+</div>
+<div class="caption">
+    Graph (credits <d-footnote><a href="https://youtu.be/eCDBA_SbxCE">Ravi, Nikhila: "3D Deep Learning with PyTorch3D <d-cite key="ravi2020pytorch3d"></d-cite>", ICML 2020"</a></d-footnote>)
+</div>
+
+<!-- Graph Convolutional Networks -->
+<p><a name="gcn"></a></p>
+<h3 id="graph-convolutional-networks">Graph Convolutional Networks</h3>
+<p>CNNs learn features <strong>hierarchically</strong> by building from simpler ones to more complex. Desirable properties of CNNs include weight sharing, local connectivity, non-linearity and pooling layers, that have helped them achieve outstanding performance in a variety of tasks.</p>
+
+<p>In graphs, the notion of neighborhoods and connectivity is <strong>ill-defined</strong>, making the application of convolution and pooling operations <em>non-trivial</em>. Two approaches to tackle this: <em>spectral</em> and <em>non-spectral</em>. Whereas spectral approaches deal with spectral representations of graphs (eg. graph Laplacian), non-spectral approaches define convolutions directly on the graph.</p>
+
+<p>That is, the <strong>spatial approaches</strong> assume that graphs are embedded in a Euclidean space where nodes can have coordinates and weights on them. This assumption helps in generalizing pixels (in case of CNNs) to nodes of the graph, over which we can take the similar <em>sliding window</em> approach to aggregate the features of the neighborhoods.</p>
+
+<!-- Graph Conv -->
+<p><a name="graphconv"></a></p>
+<h3 id="graph-convolution">Graph Convolution</h3>
+<p>We’ll stick to GCNs in spatial domain, in which, convolution is usually implemented through non-linear functions (eg. MLP) over spatial neighbors, and pooling may be adopted to produce a new <strong>coarsened</strong> graph by aggregating information from each point’s neighbors.</p>
+
+<h4 id="message-passing-and-neighborhood-aggregation">Message Passing and Neighborhood Aggregation</h4>
+<div class="row row-cols-1 mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gnn/message-passing.gif">
+    </div>
+</div>
+<div class="caption">
+    A simple illustration. (credits <d-footnote><a href="https://youtu.be/2KRAOZIULzw">Zak Jost: Graph Convolutional Networks"</a></d-footnote>)
+</div>
+
+<p>We can choose to determine a fix-sized (node degree) or a variable neighborhood, which would require to define an operator that can work with <strong>different sized neighborhoods</strong>. After determining the neighborhood, an aggregator is performed over it, for instance, <code class="language-plaintext highlighter-rouge">mean</code> over all the neighbor’s feature vectors.</p>
+
+<p>The aggregation operator generally is chosen to be <strong>permutation invariant</strong>. That is, the aggregated output is invariant to the order of neighbors picked. The usual choices being <code class="language-plaintext highlighter-rouge">sum</code>, <code class="language-plaintext highlighter-rouge">mean</code> and <code class="language-plaintext highlighter-rouge">max</code>.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gnn/neighborhood-agg.gif">
+    </div>
+</div>
+<div class="caption">
+    An illustration of graph convolution. (credits <d-footnote><a href="https://youtu.be/2KRAOZIULzw">Zak Jost: Graph Convolutional Networks"</a></d-footnote>)
+</div>
+
+<div class="l-body"><hr style="margin:0;"></div>
+
+<!-- Recipe -->
+<p><a name="recipe"></a></p>
+<h3 id="graph-convolution-recipe">Graph Convolution: Recipe</h3>
+<div class="row row-cols-4 mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gnn/1.jpg">
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gnn/2.jpg">
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gnn/3.jpg">
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gnn/4.jpg">
+    </div>
+</div>
+<div class="caption">
+    (left-right 1–4) 4-step recipe. (credits <d-footnote><a href="https://youtu.be/eCDBA_SbxCE">Ravi, Nikhila: "3D Deep Learning with PyTorch3D <d-cite key="ravi2020pytorch3d"></d-cite>"", ICML 2020"</a></d-footnote>)
+</div>
+
+<ol>
+  <li>Select a vertex</li>
+  <li>Find its neighboring vertices using the edges</li>
+  <li>Aggregate (eg. sum) features of the neighbors</li>
+  <li>Update features of the selected node</li>
+</ol>
+
+<div class="l-body"><hr style="margin:0;"></div>
+
+<!-- Equation -->
+<p><a name="gcn-eqn"></a></p>
+<h3 id="gcns-in-an-equation">GCNs in an equation</h3>
+
+<p>The equation encapsulates message passing and neighborhood aggregation in GCNs.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+    $$
+	\mathbf{x}_i^{(k)} = \gamma^{(k)} \biggl( \mathbf{x}_i^{(k-1)} , \square_{j \in \mathcal{N}(i)} \quad  \phi^{(k)} \Bigl( \mathbf{x}_i^{(k-1)} , \mathbf{x}_j^{(k-1)} , \mathbf{e}_{j,i}  \Bigr) \biggr) \quad
+	\text{where,}
+	$$
+	$$ \mathbf{x}_i^{(k)} \in \mathbb{R}^{F'} $$
+	$$ \mathbf{x}_i^{(k-1)}, \mathbf{x}_j^{(k-1)} \in \mathbb{R}^{F} $$
+	$$ \mathbf{e}_{j,i} \in \mathbb{R}^{D} $$
+    </div>
+</div>
+
+<div class="l-body"><hr></div>
+
+<h4 id="in-words">in words</h4>
+
+<p>Calculating features of node \(\mathbf{x}_i\) in \(k^{th}\) layer is a non-linear function of:</p>
+<ol>
+  <li>its features in previous layer \(i.e. \, \mathbf{x}_i^{(k-1)}\); and,</li>
+  <li>aggregegated output over its neighbors \(j \in \mathcal{N}(i)\)
+    <ul>
+      <li>each “output” is a non-linear function of \(\mathbf{x}_i^{(k-1)},\) neighbor features \(\mathbf{x}_j^{(k-1)}\) and (optionally) of the edge features \(\mathbf{e}_{j,i}\) between them (all in the previous layer \(k-1\))</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gnn/eqn.png">
+    </div>
+</div>
+<div class="caption">
+    Detailed equation (credits: <d-footnote><a href="https://pytorch-geometric.readthedocs.io/en/latest/notes/create_gnn.html">PyTorch Geometric</a></d-footnote>)
+</div>
+
+<hr>
+<p><img class="emoji" title=":bulb:" alt=":bulb:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png" height="20" width="20"> <code class="language-plaintext highlighter-rouge">TODO: add citations</code> <br>
+<img class="emoji" title=":loudspeaker:" alt=":loudspeaker:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4e2.png" height="20" width="20"> <code class="language-plaintext highlighter-rouge">the discussion section is below</code> <a href="#disqus_thread"><img class="emoji" title=":arrow_down:" alt=":arrow_down:" src="https://github.githubassets.com/images/icons/emoji/unicode/2b07.png" height="20" width="20"></a></p>
+
+
+      </d-article>
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
+
+    </div>
+
+	<!-- Disqus -->
+	  
+	  <div class="l-body">
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+		  var disqus_shortname  = 'pratulyab';
+		  var disqus_identifier = '/blog/2020/graph-nn';
+		  var disqus_title      = "Graph Neural Networks and Graph Convolution";
+		  (function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		  })();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+	  </div>
+	  
+
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    © Copyright 2021 Pratulya  Bubna.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <d-bibliography src="/assets/bibliography/2020-12-05-graph-nn.bib">
+  </d-bibliography>
+
+
+
+</html>
